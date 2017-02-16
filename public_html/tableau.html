@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+    <head>
+        <title>Tableau des signalements</title>
+        <meta charset="UTF-8">
+
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tableau.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+
+    <body onload="initCanvas();">
+
+        <div id="main">
+
+            <div id="top">
+                <div>Tableau des signalements</div>
+            </div>
+
+            <div id="centre">
+                <section class="intro">
+                    <h2>Tableau des signalements</h2>
+                </section>
+
+                <div id="divCanvas">
+                    <canvas id="myCanvas" width="1024" height="768"></canvas>
+                </div>
+
+                <div></div>
+
+                <aside class="sidebar">
+                    boutons à droite
+                </aside>
+
+            </div>
+
+            <div id="bottom">footer</div>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!--Fallback to loading jQuery from a local path if the CDN is unavailable-->
+        <script>(window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>'));</script>
+
+        <script src="js/tableau.js" type="text/javascript"></script>
+    </body>
+
+</html>
